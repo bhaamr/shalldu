@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "704660331408",
+    "project_id": "shalldu-c9024",
+    "storage_bucket": "shalldu-c9024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704660331408:android:d4ebe19a97c6c77ae4f115",
+        "android_client_info": {
+          "package_name": "com.bhaam.shalldu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704660331408-mm1jegdi0qo7la4tg95tk80tvmnerflr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAURJOmokCXs8MA0epqYvAxD0OwbL1W8QM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704660331408-mm1jegdi0qo7la4tg95tk80tvmnerflr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -44,34 +44,34 @@ class _CloudtestState extends State<Cloudtest> {
     return Card(
       color: Colors.black,
       child: Slidable(
-        actionPane: SlidableDrawerActionPane(),
-        secondaryActions: [
-          IconSlideAction(
-            caption: 'See full info',
-            color: Colors.purple[600],
-            icon: Icons.preview,
-            onTap: () {
-              /*doctitle = document['title'];
-              docdescription = document['description'];
-              docimage = document['image'];
-              print(document.id);*/
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Todo(
-                    doctitle: document['title'],
-                    doctdescription: document['description'],
-                    docimage: document['image'],
-                    docid: document.id,
-                    docdate: document['created'],
-                    doctags: document['tags'],
-                    alltags: tags,
+        startActionPane: ActionPane(
+          motion: ScrollMotion(),
+          children: [
+            SlidableAction(
+              onPressed: (novoid){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Todo(
+                      doctitle: document['title'],
+                      doctdescription: document['description'],
+                      docimage: document['image'],
+                      docid: document.id,
+                      docdate: document['created'],
+                      doctags: document['tags'],
+                      alltags: tags,
+                      )
+                    )
+                );
+              },
+              icon: Icons.preview,
+              label: 'See full info',
+              backgroundColor: Colors.purple,
 
-                     )
-                  )
-              );
-            },
-          ),
-        ],
+
+            )
+          ],
+        ),
+
         child: CheckboxListTile(
             title: Text(
               document['title'],
